@@ -1,0 +1,520 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+/* google font  */
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   
+
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* navbar style  */
+nav {
+    width: 100%;
+    max-width: 1980px;
+    position: absolute;
+    inset: 0 0 100% 0;
+
+}
+
+nav .container {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-list {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: opacity 300ms ease;
+}
+
+.list-item:hover {
+   opacity: 0.7;
+}
+
+.contact {
+    background-color: #ff5e14;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+/* navbar style  */
+
+.header {
+    width: 100%;
+    max-width: 1980px;
+    background-image: url(banner1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+
+}
+
+.header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header-info {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+
+}
+
+.header-headline {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 110%;
+    text-transform: capitalize;
+    color: white;
+    padding-block: 1rem;
+}
+
+.header-subtitle {
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: center;
+    color: #f1f1f1;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+
+.cta {
+    width: 200px;
+    background-color: #ff5e14;
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+
+
+
+/* product  */
+#product {
+    width: 100%;
+    max-width: 1980px;
+    padding-block: 1rem;
+}
+
+.product-info {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.product-info .product-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #ff5e14;
+    width: 70%;
+}
+
+.product-btn {
+    background-color: transparent;
+    color: #ff5e14;
+    font-size: 1.5rem;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    transition: color 300ms;
+}
+
+.product-btn:hover {
+    color: #000;
+}
+
+#product .container {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card {
+    flex-basis: 28%;
+    /* background-color: royalblue; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 0.5px solid rgba(80, 80, 80, 0.30); */
+    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.product-card:hover .product-img{
+    transform: scale(1.035);
+}
+
+.product-img {
+    flex-basis: 100%;
+    object-fit: cover;
+    transition:  300ms ease;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.card-info-content {
+    display: flex;
+    text-transform: uppercase;
+    min-height: 20px;
+    justify-self: center;
+    align-items: center;
+    gap: 0.5rem;
+    /* background-color: yellow; */
+    width: 90%;
+    margin-inline: auto;
+
+}
+
+.content {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: start;
+    min-height: 20px;
+    align-items: center;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+
+    gap: 10px;
+
+}
+
+.price p {
+    font-size: 1.5rem;
+    flex-basis: 30%;
+
+}
+
+.booking-btn {
+    color: #fff;
+    background-color: #ff5e14;
+    flex-basis: 50%;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+/* product  */
+
+
+@media (max-width:600px) {
+    .navbar {
+
+        box-shadow: 2px 2px 2px rgba(80, 80, 80, 0.15);
+        min-height: 80px;
+        z-index: 9999;
+    }
+
+    .logo {
+        color: #fff;
+    }
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        top: -50vh;
+        gap: 2rem;
+        left: 0%;
+        padding-left: 0;
+        transition: opacity 200ms ease-in-out;
+        background-color: #ff5e14;
+        width: 100%;
+        opacity: 0;
+        justify-content: start;
+    }
+
+    .nav-list :last-child {
+        padding-bottom: 1rem;
+        
+    }
+    
+    .nav-list.active {
+        opacity: 1;
+        top: 60px;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        z-index: 9999;
+
+    }
+
+
+    .contact {
+        background-color: transparent;
+        padding-left: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-right: 1rem;
+    }
+
+    .line {
+        width: 90%;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        transition: transform 300ms ease-in-out;
+    }
+
+    .line1 {
+        top: 3px;
+    }
+
+    .line1.active {
+        transform: rotate(49deg);
+        top: 15px;
+    }
+
+    .line2.active {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    .line3 {
+        bottom: 3px;
+
+    }
+
+    .line3.active {
+
+        transform: rotate(-49deg);
+        bottom: 16px;
+
+    }
+    .header {
+        height: 600px;
+        /* z-index: -1; */
+    }
+
+    .header.container {
+        width: 100%;
+        z-index: -99;
+    }
+    .header-info{
+        z-index: 989;
+    }
+
+    .header-headline {
+        font-size: 2.5rem;
+        /* text-align: left; */
+        width: 100%;
+        padding: 0;
+        line-height: 140%;
+        font-weight: 900;
+    }
+
+    .header-subtitle {
+        width: 100%;
+        font-size: 0.825rem;
+        padding: 1rem;
+    }
+
+    .cta {
+        width: 100px;
+        font-size: 0.825rem;
+    }
+
+    form{
+        width: 100%;
+        display: block;
+        margin-top: -100px;
+        border-radius: 0;
+    }
+    form .container{
+        width: 100%;
+     border-top-right-radius: 0;
+     border-top-left-radius: 0;
+     box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.15);
+        padding-block: 2rem;
+    }
+
+    .input{
+        flex-basis: 70%;
+    }
+
+    .product-info{
+       width: 90%;
+       flex-direction: column;
+       justify-content: center;
+    }
+    
+.product-info .product-title{
+        font-size: 1.5rem;
+        width: 100%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .product-btn{
+        width: 350px;
+    }
+    #product .container{
+        gap: 2rem;
+    }
+
+    .product-card{
+        flex-basis: 100%;
+    }
+}
+
+/* This is for Mouse Movement */
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+  li.hover{
+    cursor: grab;
+}
