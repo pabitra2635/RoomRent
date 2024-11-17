@@ -1,3 +1,4 @@
+
 /* google font  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
 /* google font  */
@@ -95,8 +96,8 @@ nav .container {
 }
 
 .logo {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
     color: #fff;
 }
 
@@ -112,6 +113,7 @@ nav .container {
     font-size: 1.2rem;
     font-weight: 500;
     transition: opacity 300ms ease;
+    text-decoration: none;
 }
 
 .list-item:hover {
@@ -124,7 +126,6 @@ nav .container {
     border-radius: 5px;
 }
 
-
 .mobile-menu{
     display: none;
 }
@@ -133,13 +134,12 @@ nav .container {
 .header {
     width: 100%;
     max-width: 1980px;
-    background-image: url(5c1cbaf96bcec-wallpaper-preview.jpg);
+    background-image: url(wallpapersden.com_house-reflected-in-the-lake_2560x1440.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     z-index: 2;
-
 }
 
 .header .container {
@@ -148,7 +148,7 @@ nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 80%;
 }
 
 .header-info {
@@ -160,7 +160,6 @@ nav .container {
     flex-direction: column;
     height: 100%;
     z-index: 2;
-
 }
 
 .header-headline {
@@ -170,7 +169,7 @@ nav .container {
     line-height: 110%;
     text-transform: capitalize;
     color: white;
-    padding-block: 1rem;
+    padding-block: 0rem;
 }
 
 .header-subtitle {
@@ -179,7 +178,7 @@ nav .container {
     text-align: center;
     color: #f1f1f1;
     text-transform: capitalize;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .cta {
@@ -191,9 +190,12 @@ nav .container {
     border-radius: 5px;
     font-size: 2rem;
 }
-
-
-
+.cta:hover{
+  background-color:  #d82d50;
+}
+.cta:active{
+  background-color:  #d82d50;
+}
 
 /* product  */
 #product {
@@ -327,8 +329,9 @@ nav .container {
     flex-basis: 50%;
     padding: 0.5rem 0.5rem;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.6rem;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 
@@ -337,7 +340,7 @@ nav .container {
 
 @media (max-width:600px) {
     .navbar {
-
+        height: 20px;
         box-shadow: 2px 2px 2px rgba(80, 80, 80, 0.15);
         min-height: 80px;
         z-index: 9999;
@@ -518,3 +521,199 @@ nav .container {
   li.hover{
     cursor: grab;
 }
+
+/* footer */
+.foot-panel1{
+  background-color:  #db3556;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 16px;
+color: #878787;
+text-align: center;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  }
+
+/* Add a hover effect if you want */
+.fa:hover {
+opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-linkedin{
+background: #0072b1;
+color: white;
+}
+.fa-instagram{
+background: #962fbf;
+color: white;
+}
+.fa-whatsapp{
+background: #25D366;
+color: white;
+}
+.fa-facebook{
+background: #3B5998;
+color: white;
+}
+/* footer */
