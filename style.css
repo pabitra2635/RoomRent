@@ -117,7 +117,7 @@ nav .container {
 }
 
 .list-item:hover {
-   opacity: 0.7;
+   opacity: 0.8;
 }
 
 .contact {
@@ -190,11 +190,15 @@ nav .container {
     border-radius: 5px;
     font-size: 2rem;
 }
-.cta:hover{
-  background-color:  #d82d50;
+@media (max-width:600px) {
+    .cta:active{
+        background-color:  #ce4303;
+      }
 }
-.cta:active{
-  background-color:  #d82d50;
+@media (min-width:601px) {
+    .cta:hover{
+        background-color:  #ce4303;
+      }
 }
 
 /* product  */
@@ -258,6 +262,7 @@ nav .container {
     box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
     padding-bottom: 1rem;
     overflow: hidden;
+    /* background-color: #25D366; */
 }
 
 .product-card:hover .product-img{
@@ -333,7 +338,16 @@ nav .container {
     border-radius: 5px;
     text-decoration: none;
 }
-
+@media (max-width:600px) {
+    .booking-btn:active{
+        background-color:  #ce4303;
+      }
+}
+@media (min-width:601px) {
+    .booking-btn:hover{
+        background-color:  #ce4303;
+      }
+}
 
 /* product  */
 
@@ -422,14 +436,11 @@ nav .container {
 
     .line3 {
         bottom: 3px;
-
     }
 
     .line3.active {
-
         transform: rotate(-49deg);
         bottom: 16px;
-
     }
     .header {
         height: 600px;
@@ -524,7 +535,7 @@ nav .container {
 
 /* footer */
 .foot-panel1{
-  background-color:  #db3556;
+  background-color:  #d04a0c;
   color: white;
   height: 50px;
   display: flex;
@@ -649,6 +660,11 @@ text-transform: capitalize;
 position: relative;
 overflow: hidden;
 }
+@media (max-width:600px) {
+    .subscribe-form {
+        padding-top: 30%;
+    }
+}
 .subscribe-form input {
 width: 100%;
 padding: 14px 28px;
@@ -671,11 +687,11 @@ transform: rotate(-6deg);
 }
 .copyright-area{
 background: #202020;
-padding: 25px 0;
+padding: 20px 0;
 }
 .copyright-text p {
 margin: 0;
-font-size: 16px;
+font-size: 14px;
 color: #878787;
 text-align: center;
 }
