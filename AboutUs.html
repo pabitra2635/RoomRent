@@ -298,7 +298,7 @@ footer {
             <div>
             <p>Welcome to QuickStay! Find affordable and comfortable room rentals in your desired area with ease. QuickStay makes your search simple and hassle-free. For any assistance, contact us at the number below!
             </p>
-            <a href="#team" ><button>Meet Us...</button></a>    
+            <button onclick="scrollToSection('team')">Meet Us...</button></a>    
             </div>
         </div>
     </section>
@@ -348,8 +348,12 @@ footer {
     </section>
 
     <footer>
-        <p>&copy; 2024 QuickStay. All Rights Reserved <a href="www.linkedin.com/in/pabitra-mondal-a42523292" style="color:rgb(210, 209, 209); ">Pabitra</a>.</p>
+        <p>&copy; 2024 QuickStay. All Rights Reserved <a href="https://chat.whatsapp.com/JOHZ6qwcTFTEfpP58MGBpx" style="color:rgb(210, 209, 209); ">Falconix Digital</a>.</p>
     </footer>
 </body>
-
+<script>
+    function scrollToSection(about){
+        document.querySelector(about).scrollIntoView({behavior:'smooth'});
+    }
+</script>
 </html>
