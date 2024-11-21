@@ -278,14 +278,14 @@ nav .container {
 
 .city{
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: 90%; /* Center vertically */
+    left: 20%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for perfect centering */
     color: white;
     font-size: 18px;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.6); /* Optional: semi-transparent background */
-    padding: 5px 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 10px 1000px;
     border-radius: 5px;
 }
 /* product  */
