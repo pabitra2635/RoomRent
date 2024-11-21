@@ -11,13 +11,79 @@
     padding: 0;
     box-sizing: border-box;
 }
-    body {
-    font-family: Arial, sans-serif;
+
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+/* google font  */
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
     background-color: #e3eef8;
     height: 100%;
-    background-repeat: repeat;}
-    
+    background-repeat: repeat;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   
+
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
   header {
     background-color: white;
     color: rgb(0, 0, 0);
@@ -68,6 +134,22 @@ nav {
     padding-block: 1rem;
 }
 
+.product-info {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.product-info .product-title {
+    font-size: 2.8rem;
+    font-weight: 500px;
+    text-transform: capitalize;
+    color: #003B95;
+    width: 70%;
+}
+
 #product .container {
     width: 90%;
     margin-inline: auto;
@@ -77,7 +159,12 @@ nav {
     flex-wrap: wrap;
     gap: 1rem;
 }
-
+.container a{
+    text-decoration: none;
+    width: 100%;
+    color: rgb(0, 0, 0);
+text-align: center;
+}
 .product-card {
     flex-basis: 28%;
     /* background-color: royalblue; */
@@ -86,10 +173,10 @@ nav {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    border: 0.5px solid rgba(80, 80, 80, 0.30);
+    /* border: 0.5px solid rgba(80, 80, 80, 0.30); */
     box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
-    padding-bottom: 0rem;
     overflow: hidden;
+    /* background-color: #25D366; */
 }
 
 .product-card:hover .product-img{
@@ -97,90 +184,40 @@ nav {
 }
 
 .product-img {
-    max-width: 100%;
+    flex-basis: 100%;
+    object-fit: cover;
     transition:  300ms ease;
 }
 
-.card-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    /* background-color: red; */
-    height: 174.39px;
-    gap: 1rem;
-}
-
-.card-info-content {
-    display: flex;
-    text-transform: uppercase;
-    min-height: 20px;
-    justify-self: center;
-    align-items: center;
-    gap: 0.5rem;
-    /* background-color: yellow; */
-    width: 90%;
-    margin-inline: auto;
-
-}
-
-.content {
-    flex-basis: 30%;
-    display: flex;
-    justify-content: start;
-    min-height: 20px;
-    align-items: center;
-}
-
-.content p {
-    font-size: 1rem;
-}
-
-.price {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin-inline: auto;
-    gap: 10px;
-}
-
-.price p {
-    font-size: 1.5rem;
-    flex-basis: 30%;
-}
-
-.booking-btn {
-    color: #fff;
-    background-color: #ff5e14;
-    flex-basis: 50%;
-    padding: 0.5rem 0.5rem;
-    text-align: center;
-    font-size: 1.6rem;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: auto;
-}
-@media (max-width:600px) {
-    .booking-btn:active{
-        background-color:  #ce4303;
-      }
-}
-@media (min-width:601px) {
-    .booking-btn:hover{
-        background-color:  #ce4303;
-      }
-}
-
 /* product  */
+
 @media (max-width:600px) {
 .container{
-        gap: 2rem;
+        gap: 1rem;
     }
     .product-card{
         flex-basis: 100%;
     }
 
+    .product-info{
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+     }
+     
+ .product-info .product-title{
+         font-size: 1.5rem;
+         width: 100%;
+         flex-basis: 100%;
+         text-align: center;
+     }
+     #product .container{
+         gap: 1rem;
+     }
+ 
+     .product-card{
+         flex-basis: 100%;
+     }
 }
 /* Footer */
 footer {
@@ -205,188 +242,56 @@ footer {
         </nav>
         </header>
         <div class="fake"></div>
-<!-- product  -->
-    <section id="product" >
+    <!-- product  -->
+    <section id="product">
+        <div class="product-info">
+            <h2 class="product-title">
+                Choose Your Locality
+            </h2>
+        </div>
         <div class="container">
             <div class="product-card">
-                <img src="house1.png" alt="" class="product-img">
-                <div class="card-info">
-
-                    <div class="card-info-content">
-                        <img src="location.svg" alt="">
-                        <p class="loaction-name">Agarwa ,Motihari ,Bihar</p>
-                    </div>
-                    <div class="card-info-content">
-                        <div class="content">
-                            <img src="bed.svg" alt="">
-                            <p>4 Bed</p>
-                        </div>
-                        <div class="content">
-                            <img src="size.svg" alt="">
-                            <p>10x10m</p>
-                        </div>
-                        <div class="content">
-                            <img src="area.svg" alt="">
-                            <p>14000M</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <p>₹5000</p>
-                        <a href="Agarwa.html" class="booking-btn"> Book Now!</a>
-                    </div>
-
-                </div>
+                <a href="Agarwa.html" >
+                    <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
+                    <span class="city" >Chandmari</span>
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <a href="Agarwa.html">
+                    <img src="Patna2.jpg" alt="" class="product-img">
+                    <span class="city">Agarwa</span>
+                </a>
             </div>
             <div class="product-card">
-                <img src="house2.png" alt="" class="product-img">
-                <div class="card-info">
-
-                    <div class="card-info-content">
-                        <img src="location.svg" alt="">
-                        <p class="loaction-name">Agarwa ,Motihari ,Bihar</p>
-                    </div>
-                    <div class="card-info-content">
-                        <div class="content">
-                            <img src="bed.svg" alt="">
-                            <p>4 Bed</p>
-                        </div>
-                        <div class="content">
-                            <img src="size.svg" alt="">
-                            <p>10x10m</p>
-                        </div>
-                        <div class="content">
-                            <img src="area.svg" alt="">
-                            <p>14000M</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <p>₹5000</p>
-                        <a href="Agarwa.html" class="booking-btn">Book Now!</a>
-                    </div>
-
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="house3.png" alt="" class="product-img">
-                <div class="card-info">
-
-                    <div class="card-info-content">
-                        <img src="location.svg" alt="">
-                        <p class="loaction-name">Agarwa ,Motihari ,Bihar</p>
-                    </div>
-                    <div class="card-info-content">
-                        <div class="content">
-                            <img src="bed.svg" alt="">
-                            <p>4 Bed</p>
-                        </div>
-                        <div class="content">
-                            <img src="size.svg" alt="">
-                            <p>10x10m</p>
-                        </div>
-                        <div class="content">
-                            <img src="area.svg" alt="">
-                            <p>14000M</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <p>₹5000</p>
-                        <a href="Agarwa.html" class="booking-btn">Book Now!</a>
-                    </div>
-
-                </div>
+                <a href="Agarwa.html">
+                    <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
+                    <span class="city">Chandmari</span>
+                </a>
             </div>
         </div>
     </section>
     <!-- product  -->
-     <!-- product  -->
+    <!-- product  -->
     <section id="product">
         <div class="container">
             <div class="product-card">
-                <img src="house1.png" alt="" class="product-img">
-                <div class="card-info">
-
-                    <div class="card-info-content">
-                        <img src="location.svg" alt="">
-                        <p class="loaction-name">Agarwa ,Motihari ,Bihar</p>
-                    </div>
-                    <div class="card-info-content">
-                        <div class="content">
-                            <img src="bed.svg" alt="">
-                            <p>4 Bed</p>
-                        </div>
-                        <div class="content">
-                            <img src="size.svg" alt="">
-                            <p>10x10m</p>
-                        </div>
-                        <div class="content">
-                            <img src="area.svg" alt="">
-                            <p>14000M</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <p>₹5000</p>
-                        <a href="Agarwa.html" class="booking-btn"> Book Now!</a>
-                    </div>
-
-                </div>
+                <a href="Agarwa.html">
+                    <img src="Patna1.jpg" alt="" class="product-img">
+                    <span class="city">Agarwa</span>
+                </a>
             </div>
             <div class="product-card">
-                <img src="house2.png" alt="" class="product-img">
-                <div class="card-info">
-
-                    <div class="card-info-content">
-                        <img src="location.svg" alt="">
-                        <p class="loaction-name">Agarwa ,Motihari ,Bihar</p>
-                    </div>
-                    <div class="card-info-content">
-                        <div class="content">
-                            <img src="bed.svg" alt="">
-                            <p>4 Bed</p>
-                        </div>
-                        <div class="content">
-                            <img src="size.svg" alt="">
-                            <p>10x10m</p>
-                        </div>
-                        <div class="content">
-                            <img src="area.svg" alt="">
-                            <p>14000M</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <p>₹5000</p>
-                        <a href="Agarwa.html" class="booking-btn">Book Now!</a>
-                    </div>
-
-                </div>
+                <a href="Agarwa.html">
+                    <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
+                    <span class="city">Chandmari</span>
+                </a>
             </div>
             <div class="product-card">
-                <img src="house3.png" alt="" class="product-img">
-                <div class="card-info">
-
-                    <div class="card-info-content">
-                        <img src="location.svg" alt="">
-                        <p class="loaction-name">Agarwa ,Motihari ,Bihar</p>
-                    </div>
-                    <div class="card-info-content">
-                        <div class="content">
-                            <img src="bed.svg" alt="">
-                            <p>4 Bed</p>
-                        </div>
-                        <div class="content">
-                            <img src="size.svg" alt="">
-                            <p>10x10m</p>
-                        </div>
-                        <div class="content">
-                            <img src="area.svg" alt="">
-                            <p>14000M</p>
-                        </div>
-                    </div>
-                    <div class="price">
-                        <p>₹5000</p>
-                        <a href="Agarwa.html" class="booking-btn">Book Now!</a>
-                    </div>
-
-                </div>
+                <a href="Agarwa.html">
+                    <img src="Patna3.jpg" alt="" class="product-img">
+                    <span class="city">Agarwa</span>
+                </a>
             </div>
         </div>
     </section>
