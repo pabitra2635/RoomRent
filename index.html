@@ -74,7 +74,6 @@
         </div>
     </section>
     <!-- header  -->
-
     <!-- product  -->
     <section id="product">
         <div class="product-info">
@@ -82,53 +81,59 @@
                 Choose Your City
             </h2>
 
-            <a href="" class="product-btn" style="text-decoration: none;">
+<!-- filterOption -->
+<select id="filterSelect" class="product-btn">
+    <option value="all">All</option>
+    <option value="1">Motihari</option>
+    <option value="2">Patna</option>
+    <option value="3">Muzaffarpur</option>
+    <option value="4">Darbhanga</option>
+    <option value="5">Bhagalpur</option>
+    <option value="6">Gaya</option>
+  </select>
+<!-- filterOption -->
+            <!-- <a href="" class="product-btn" style="text-decoration: none;">
                 Explore All
                 <img src="arrow.svg" alt="">
-            </a>
+            </a> -->
         </div>
-        <div class="container">
-            <div class="product-card">
+        <div class="container" class="card-container" id="cardContainer">
+            <div class="product-card" class="card" data-value="1">
                 <a href="Motihari.html" >
                     <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
                     <span class="city">Motihari</span>
                 </a>
             </div>
             
-            <div class="product-card">
+            <div class="product-card" class="card" data-value="2">
                 <a href="Motihari.html">
                     <img src="Patna2.jpg" alt="" class="product-img">
                     <span class="city">Patna</span>
                 </a>
             </div>
-            <div class="product-card">
+            <div class="product-card" class="card" data-value="3">
                 <a href="Motihari.html">
-                    <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
-                    <span class="city">Motihari</span>
+                    <img src="Muzaffarpur.webp" alt="" class="product-img">
+                    <span class="city">Muzaffarpur</span>
                 </a>
             </div>
-        </div>
-    </section>
-    <!-- product  -->
-    <!-- product  -->
-    <section id="product">
-        <div class="container">
-            <div class="product-card">
+
+            <div class="product-card" class="card" data-value="4">
                 <a href="Motihari.html">
-                    <img src="Patna1.jpg" alt="" class="product-img">
-                    <span class="city">Patna</span>
+                    <img src="Darbhanga.jpg" alt="" class="product-img">
+                    <span class="city">Darbhanga</span>
                 </a>
             </div>
-            <div class="product-card">
+            <div class="product-card" class="card" data-value="5">
                 <a href="Motihari.html">
-                    <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
-                    <span class="city">Motihari</span>
+                    <img src="Bhagalpur.jpg" alt="" class="product-img">
+                    <span class="city">Bhagalpur</span>
                 </a>
             </div>
-            <div class="product-card">
+            <div class="product-card" class="card" data-value="6">
                 <a href="Motihari.html">
-                    <img src="Patna3.jpg" alt="" class="product-img">
-                    <span class="city">Patna</span>
+                    <img src="Gaya.webp" alt="" class="product-img">
+                    <span class="city">Gaya</span>
                 </a>
             </div>
         </div>
