@@ -290,8 +290,11 @@ nav .container {
     border-radius: 5px;
 }
 /* product  */
-
-
+/* FilterCard */
+.hidden {
+    display: none;
+  }
+/* FilterCard */
 @media (max-width:600px) {
     .navbar {
         height: 20px;
