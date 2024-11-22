@@ -119,3 +119,20 @@ function animateCircles() {
 }
 
 animateCircles();
+
+// FilterCard
+const filterSelect = document.getElementById('filterSelect');
+const cardContainer = document.getElementById('cardContainer');
+const cards = Array.from(cardContainer.children);
+
+filterSelect.addEventListener('change', () => {
+  const selectedValue = filterSelect.value;
+
+  cards.forEach(card => {
+    if (selectedValue === 'all' || card.getAttribute('data-value') === selectedValue) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+});
