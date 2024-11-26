@@ -203,6 +203,14 @@ nav .container {
         background-color:  #ce4303;
       }
 }
+/* text animation */
+
+  /* Cursor */
+  .txt-type > .txt {
+    border-right: 0.2rem solid #777;
+  }
+
+
 /* Slider */
 @media (min-width:600px) {
     .carousel{
