@@ -124,7 +124,7 @@ nav .container {
 }
 
 .contact {
-    background-color: #ff5e14;
+    background-color: #E2000F;
     padding: 0.5rem 0.8rem;
     border-radius: 5px;
 }
@@ -186,7 +186,7 @@ nav .container {
 
 .cta {
     width: 200px;
-    background-color: #ff5e14;
+    background-color: #E2000F;
     color: #fff;
     text-align: center;
     padding: 0.8rem 1rem;
@@ -195,12 +195,12 @@ nav .container {
 }
 @media (max-width:600px) {
     .cta:active{
-        background-color:  #ce4303;
+        background-color:  #b5020e;
       }
 }
 @media (min-width:601px) {
     .cta:hover{
-        background-color:  #ce4303;
+        background-color:  #b5020e;
       }
 }
 /* text animation */
@@ -236,13 +236,13 @@ nav .container {
     font-size: 2.8rem;
     font-weight: 500;
     text-transform: capitalize;
-    color: #ff5e14;
+    color: #E2000F;
     width: 70%;
 }
 
 .product-btn {
     background-color: transparent;
-    color: #ff5e14;
+    color: #E2000F;
     font-size: 1.5rem;
     display: flex;
     width: 20%;
@@ -328,7 +328,7 @@ nav .container {
         left: 0%;
         padding-left: 0;
         transition: opacity 200ms ease-in-out;
-        background-color: #ff5e14;
+        background-color: #E2000F;
         width: 100%;
         opacity: 0;
         justify-content: start;
@@ -474,19 +474,21 @@ nav .container {
 }
 
 /* This is for Mouse Movement */
-.circle {
-    height: 24px;
-    width: 24px;
-    border-radius: 24px;
-    background-color: black;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
-  li.hover{
-    cursor: grab;
+@media (min-width:500px) {
+    .circle {
+        height: 24px;
+        width: 24px;
+        border-radius: 24px;
+        background-color: black;
+        position: fixed; 
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 99999999; /* so that it stays on top of all other elements */
+      }
+      li.hover{
+        cursor: grab;
+    }
 }
 
 /* footer */
@@ -511,7 +513,7 @@ position: relative;
 border-bottom: 1px solid #373636;
 }
 .single-cta i {
-color: #ff5e14;
+color: #E2000F;
 font-size: 30px;
 float: left;
 margin-top: 8px;
@@ -597,7 +599,7 @@ left: 0;
 bottom: -15px;
 height: 2px;
 width: 50px;
-background: #ff5e14;
+background: #E2000F;
 }
 .footer-widget ul li {
 display: inline-block;
@@ -606,7 +608,7 @@ width: 50%;
 margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-color: #ff5e14;
+color: #E2000F;
 }
 .footer-widget ul li a {
 color: #878787;
@@ -631,9 +633,9 @@ color: #fff;
 .subscribe-form button {
   position: absolute;
   right: 0;
-  background: #ff5e14;
+  background: #E2000F;
   padding: 13px 20px;
-  border: 1px solid #ff5e14;
+  border: 1px solid #E2000F;
   top: 0;
 }
 .subscribe-form button i {
@@ -652,7 +654,7 @@ color: #878787;
 text-align: center;
 }
 .copyright-text p a{
-color: #ff5e14;
+color: #E2000F;
 }
 
 .fa {
