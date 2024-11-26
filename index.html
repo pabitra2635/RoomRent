@@ -1,693 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
 
-/* google font  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
-/* google font  */
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Rent Services</title>
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css">
+      <!--bootstrap cdn-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB5000NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
 
-/*
-  2. Remove default margin
-*/
-* {
-    margin: 0;
-}
+<body>
+    <!-- This is for Mouse Movement -->
+<div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+</div>
+<!-- This is for Mouse Movement -->
+    <!-- header  -->
+    <section class="header">
+            <!-- navbar  -->
+        <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                QuickStay
+            </div>
+            <ul class="nav-list">
+                <li><a href="AboutUs.html" class="list-item">Service</a></li>
+                <li><a href="#carouselExampleCaptions" class="list-item">Explore</a></li>
+                <li><a href="https://pabitra2635.github.io/form/" class="list-item">FeedBack</a></li>
+                <li><a href="AboutUs.html" class="list-item">About us</a></li>
+                <li><a href="AboutUs.html"class="list-item contact " style="text-decoration: none;" >Contact us</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="showMenu()">
+                <div class="line line1 "></div>
+                <div class="line line2 "></div>
+                <div class="line line3 "></div>
+            </div>
+        </div>
+    </nav>
+        <div class="container">
+            <div class="header-info">
+                    <h1 class="header-headline">your perfect home waiting for 
+                    <span class="txt-type" data-wait="3000" data-words='["you","your family","your friend"]'></span>
+                    </h1>
+                <p class="header-subtitle">
+                    we help you get your dream house with us.
+                    We are professional house consultant.
+                </p>
+                <a href="#product" class="cta" style="text-decoration: none;">Book Now!</a>
+            </div>
+        </div>
+    </section>
+    <!-- header  -->
+<!-- Slider -->
+<div id="carouselExampleCaptions" class="carousel slide" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="RoomPhotos/room.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="RoomPhotos/room1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="RoomPhotos/room3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+ <!-- Slider -->
+    <!-- product  -->
+    <section id="product">
+        <div class="product-info">
+            <h2 class="product-title">
+                Choose Your City
+            </h2>
+<!-- filterOption -->
+<select id="filterSelect" class="product-btn">
+    <option value="all">All</option>
+    <option value="1">Motihari</option>
+    <option value="2">Patna</option>
+    <option value="3">Muzaffarpur</option>
+    <option value="4">Darbhanga</option>
+    <option value="5">Bhagalpur</option>
+    <option value="6">Gaya</option>
+  </select>
+<!-- filterOption -->
+            <!-- <a href="" class="product-btn" style="text-decoration: none;">
+                Explore All
+                <img src="arrow.svg" alt="">
+            </a> -->
+        </div>
+        <div class="container" class="card-container" id="cardContainer">
+            <div class="product-card" class="card" data-value="1">
+                <a href="Motihari.html" >
+                    <img src="MotiJheelMotihari.jpg" alt="" class="product-img">
+                    <span class="city">Motihari</span>
+                </a>
+            </div>
+            
+            <div class="product-card" class="card" data-value="2">
+                <a href="Motihari.html">
+                    <img src="Patna2.jpg" alt="" class="product-img">
+                    <span class="city">Patna</span>
+                </a>
+            </div>
+            <div class="product-card" class="card" data-value="3">
+                <a href="Motihari.html">
+                    <img src="Muzaffarpur.webp" alt="" class="product-img">
+                    <span class="city">Muzaffarpur</span>
+                </a>
+            </div>
 
-/*
-    3. Allow percentage-based heights in the application
-  */
-html,
-body {
-    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-    background-color: #e3eef8;
-    height: 100%;
-    background-repeat: repeat;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-}
+            <div class="product-card" class="card" data-value="4">
+                <a href="Motihari.html">
+                    <img src="Darbhanga.jpg" alt="" class="product-img">
+                    <span class="city">Darbhanga</span>
+                </a>
+            </div>
+            <div class="product-card" class="card" data-value="5">
+                <a href="Motihari.html">
+                    <img src="Bhagalpur.jpg" alt="" class="product-img">
+                    <span class="city">Bhagalpur</span>
+                </a>
+            </div>
+            <div class="product-card" class="card" data-value="6">
+                <a href="Motihari.html">
+                    <img src="Gaya.webp" alt="" class="product-img">
+                    <span class="city">Gaya</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- product  -->
+    <div class="alert alert-info" role="alert">
+        A simple dark alert—check it out!
+      </div>
+<!-- footer -->
+<footer>
+    <div class="foot-panel1">
+      <a href="#" style="color: white;font-family: serif;font-size: 150%; text-decoration: none;">Back to Top</a>
+    </div>
+    <div class="foot">
+    </div>
+  </footer>
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Motihari, 845401, Bihar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Contact us</h4>
+                            <span>+91 8637028337</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>pabitramondal.ind@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="https://chat.whatsapp.com/JOHZ6qwcTFTEfpP58MGBpx"><img src="WhatsApp Image 2024-11-18 at 16.51.48_b3d17a35.jpg" class="img-fluid" alt="Jubilix-logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Welcome to Falconix Digital – a one-stop platform for all your digital needs! From personalized virtual celebration websites with Jubilix to hassle-free room rentals with QuickStay, we’re here to simplify your life. Share your requirements and let us turn your ideas into reality!</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="https://www.linkedin.com/in/pabitra-mondal-a42523292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fa fa-linkedin"></a>
+                            <a href="https://www.instagram.com/thenameispabitra_?igsh=MXRmODdlanQwcnp5bQ==" class="fa fa-instagram"></a>
+                            <a href="https://wa.me/qr/MRKTOLBP5VHRI1" class="fa fa-whatsapp"></a>
+                            <a href="https://www.facebook.com/share/M8Pdm6nGw2c9HaP1/?mibextid=qi2Omg" class="fa fa-facebook"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Letest News</a></li>
+                            <li><a href="https://pabitra2635.github.io/form/">FeedBack</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                        <form action="https://formsubmit.co/pabitramondal.ind@gmail.com" method="post" >
+                        <input placeholder="Mobile Number" type="number" name="number" required >
+                        <button class="sendButton" type="submit">Send</button>
+                        </div>
 
-/*
-    Typographic tweaks!
-    4. Add accessible line-height
-    5. Improve text rendering
-  */
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-   
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area" style="text-align: center;">
+        <div class="copyright-text">
+        <p>Copyright &copy; 2024, All Right Reserved <a href="https://chat.whatsapp.com/JOHZ6qwcTFTEfpP58MGBpx">Falconix Digital</a></p>
+        </div>
+    </div>
+</footer>
 
-}
+    <!-- gsap link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-/*
-    6. Improve media defaults
-  */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
+    <!-- gsap link  -->
 
-/*
-    7. Remove built-in form typography styles
-  */
-input,
-button,
-textarea,
-select {
-    font: inherit;
-}
+    <script src="app.js"></script>
+</body>
 
-/*
-    8. Avoid text overflows
-  */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* navbar style  */
-nav {
-    width: 100%;
-    max-width: 1980px;
-    position: absolute;
-    inset: 0 0 100% 0;
-
-}
-
-nav .container {
-    width: 90%;
-    margin: 0 auto;
-    min-height: 80px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: #fff;
-}
-
-.nav-list {
-    flex-basis: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.list-item {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: opacity 300ms ease;
-    text-decoration: none;
-}
-
-.list-item:hover {
-   opacity: 0.8;
-}
-
-.contact {
-    background-color: #E2000F;
-    padding: 0.5rem 0.8rem;
-    border-radius: 5px;
-}
-
-.mobile-menu{
-    display: none;
-}
-/* navbar style  */
-
-.header {
-    width: 100%;
-    max-width: 1980px;
-    background-image: url(wallpapersden.com_house-reflected-in-the-lake_2560x1440.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-}
-
-.header .container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80%;
-}
-
-.header-info {
-    width: 90%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    z-index: 2;
-}
-
-.header-headline {
-    font-size: 6rem;
-    text-align: center;
-    font-weight: 900;
-    line-height: 110%;
-    text-transform: capitalize;
-    color: white;
-    padding-block: 0rem;
-}
-
-.header-subtitle {
-    font-size: 1.5rem;
-    width: 60%;
-    text-align: center;
-    color: #f1f1f1;
-    text-transform: capitalize;
-    padding-bottom: 1rem;
-}
-
-.cta {
-    width: 200px;
-    background-color: #E2000F;
-    color: #fff;
-    text-align: center;
-    padding: 0.8rem 1rem;
-    border-radius: 5px;
-    font-size: 2rem;
-}
-@media (max-width:600px) {
-    .cta:active{
-        background-color:  #b5020e;
-      }
-}
-@media (min-width:601px) {
-    .cta:hover{
-        background-color:  #b5020e;
-      }
-}
-/* text animation */
-  /* Cursor */
-  .txt-type > .txt {
-    border-right: 0.2rem solid #777;
-  }
-
-/* Slider */
-@media (min-width:600px) {
-    .carousel{
-        margin-left: 30%;
-        margin-right: 30%;
-    }
-}
-
-/* product  */
-#product {
-    width: 100%;
-    max-width: 1980px;
-    padding-block: 1rem;
-}
-
-.product-info {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-}
-
-.product-info .product-title {
-    font-size: 2.8rem;
-    font-weight: 500;
-    text-transform: capitalize;
-    color: #E2000F;
-    width: 70%;
-}
-
-.product-btn {
-    background-color: transparent;
-    color: #E2000F;
-    font-size: 1.5rem;
-    display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    min-height: 20px;
-    transition: color 300ms;
-}
-
-.product-btn:hover {
-    color: #000;
-}
-
-#product .container {
-    width: 90%;
-    margin-inline: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.product-card {
-    flex-basis: 28%;
-    /* background-color: royalblue; */
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    /* border: 0.5px solid rgba(80, 80, 80, 0.30); */
-    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
-    overflow: hidden;
-    /* background-color: #25D366; */
-}
-
-.product-card:hover .product-img{
-    transform: scale(1.035);
-}
-
-.product-img {
-    flex-basis: 100%;
-    object-fit: cover;
-    transition:  300ms ease;
-}
-
-.city{
-    position: absolute;
-    top: 90%; /* Center vertically */
-    left: 20%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for perfect centering */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    padding: 12px 1000px;
-    border-radius: 5px;
-}
-/* product  */
-/* FilterCard */
-.hidden {
-    display: none;
-  }
-/* FilterCard */
-@media (max-width:600px) {
-    .navbar {
-        height: 20px;
-        box-shadow: 2px 2px 2px rgba(80, 80, 80, 0.15);
-        min-height: 80px;
-        z-index: 9999;
-    }
-
-    .logo {
-        color: #fff;
-    }
-    .nav-list {
-        position: absolute;
-        flex-direction: column;
-        align-items: start;
-        top: -50vh;
-        gap: 2rem;
-        left: 0%;
-        padding-left: 0;
-        transition: opacity 200ms ease-in-out;
-        background-color: #E2000F;
-        width: 100%;
-        opacity: 0;
-        justify-content: start;
-    }
-
-    .nav-list :last-child {
-        padding-bottom: 1rem;
-        
-    }
-    
-    .nav-list.active {
-        opacity: 1;
-        top: 60px;
-        padding-left: 1rem;
-        padding-top: 1rem;
-        z-index: 9999;
-
-    }
-
-
-    .contact {
-        background-color: transparent;
-        padding-left: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-        position: relative;
-        height: 35px;
-        width: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-right: 1rem;
-    }
-
-    .line {
-        width: 90%;
-        height: 4px;
-        background-color: #fff;
-        border-radius: 5px;
-        position: absolute;
-        transition: transform 300ms ease-in-out;
-    }
-
-    .line1 {
-        top: 3px;
-    }
-
-    .line1.active {
-        transform: rotate(49deg);
-        top: 15px;
-    }
-
-    .line2.active {
-        transform: translateX(30px);
-        opacity: 0;
-    }
-
-    .line3 {
-        bottom: 3px;
-    }
-
-    .line3.active {
-        transform: rotate(-49deg);
-        bottom: 16px;
-    }
-    .header {
-        height: 600px;
-        /* z-index: -1; */
-    }
-
-    .header.container {
-        width: 100%;
-        z-index: -99;
-    }
-    .header-info{
-        z-index: 989;
-    }
-
-    .header-headline {
-        font-size: 2.5rem;
-        /* text-align: left; */
-        width: 100%;
-        padding: 0;
-        line-height: 140%;
-        font-weight: 900;
-    }
-
-    .header-subtitle {
-        width: 100%;
-        font-size: 0.825rem;
-        padding: 1rem;
-    }
-
-    .cta {
-        width: 100px;
-        font-size: 0.825rem;
-    }
-
-    form{
-        width: 100%;
-        display: block;
-        margin-top: -100px;
-        border-radius: 0;
-    }
-    form .container{
-        width: 100%;
-     border-top-right-radius: 0;
-     border-top-left-radius: 0;
-     box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.15);
-        padding-block: 2rem;
-    }
-
-    .input{
-        flex-basis: 70%;
-    }
-
-    .product-info{
-       width: 90%;
-       flex-direction: column;
-       justify-content: center;
-    }
-    
-.product-info .product-title{
-        font-size: 1.5rem;
-        width: 100%;
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .product-btn{
-        width: 350px;
-    }
-    #product .container{
-        gap: 2rem;
-    }
-
-    .product-card{
-        flex-basis: 100%;
-    }
-}
-
-/* This is for Mouse Movement */
-@media (min-width:500px) {
-    .circle {
-        height: 24px;
-        width: 24px;
-        border-radius: 24px;
-        background-color: black;
-        position: fixed; 
-        top: 0;
-        left: 0;
-        pointer-events: none;
-        z-index: 99999999; /* so that it stays on top of all other elements */
-      }
-      li.hover{
-        cursor: grab;
-    }
-}
-
-/* footer */
-.foot-panel1{
-  background-color:  #d04a0c;
-  color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.85rem;
-}
-ul {
-  margin: 0px;
-  padding: 0px;
-}
-.footer-section {
-background: #151414;
-position: relative;
-}
-.footer-cta {
-border-bottom: 1px solid #373636;
-}
-.single-cta i {
-color: #E2000F;
-font-size: 30px;
-float: left;
-margin-top: 8px;
-}
-.cta-text {
-padding-left: 15px;
-display: inline-block;
-}
-.cta-text h4 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 2px;
-}
-.cta-text span {
-color: #757575;
-font-size: 15px;
-}
-.footer-content {
-position: relative;
-z-index: 2;
-}
-.footer-pattern img {
-position: absolute;
-top: 0;
-left: 0;
-height: 330px;
-background-size: cover;
-background-position: 100% 100%;
-}
-.footer-logo {
-margin-bottom: 30px;
-}
-.footer-logo img {
-  max-width: 200px;
-}
-.footer-text p {
-margin-bottom: 14px;
-font-size: 14px;
-    color: #7e7e7e;
-line-height: 28px;
-}
-.footer-social-icon span {
-color: #fff;
-display: block;
-font-size: 20px;
-font-weight: 700;
-font-family: 'Poppins', sans-serif;
-margin-bottom: 20px;
-}
-.footer-social-icon a {
-color: #fff;
-font-size: 16px;
-margin-right: 15px;
-}
-.footer-social-icon i {
-height: 40px;
-width: 40px;
-text-align: center;
-line-height: 38px;
-border-radius: 50%;
-}
-.facebook-bg{
-background: #3B5998;
-}
-.twitter-bg{
-background: #55ACEE;
-}
-.google-bg{
-background: #DD4B39;
-}
-.footer-widget-heading h3 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 40px;
-position: relative;
-}
-.footer-widget-heading h3::before {
-content: "";
-position: absolute;
-left: 0;
-bottom: -15px;
-height: 2px;
-width: 50px;
-background: #E2000F;
-}
-.footer-widget ul li {
-display: inline-block;
-
-width: 50%;
-margin-bottom: 12px;
-}
-.footer-widget ul li a:hover{
-color: #E2000F;
-}
-.footer-widget ul li a {
-color: #878787;
-text-transform: capitalize;
-}
-.subscribe-form {
-position: relative;
-overflow: hidden;
-}
-@media (max-width:600px) {
-    .subscribe-form {
-        padding-top: 30%;
-    }
-}
-.subscribe-form input {
-width: 100%;
-padding: 14px 28px;
-background: #2E2E2E;
-border: 1px solid #2E2E2E;
-color: #fff;
-}
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #E2000F;
-  padding: 13px 20px;
-  border: 1px solid #E2000F;
-  top: 0;
-}
-.subscribe-form button i {
-color: #fff;
-font-size: 22px;
-transform: rotate(-6deg);
-}
-.copyright-area{
-background: #202020;
-padding: 20px 0;
-}
-.copyright-text p {
-margin: 0;
-font-size: 14px;
-color: #878787;
-text-align: center;
-}
-.copyright-text p a{
-color: #E2000F;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  }
-
-/* Add a hover effect if you want */
-.fa:hover {
-opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-linkedin{
-background: #0072b1;
-color: white;
-}
-.fa-instagram{
-background: #962fbf;
-color: white;
-}
-.fa-whatsapp{
-background: #25D366;
-color: white;
-}
-.fa-facebook{
-background: #3B5998;
-color: white;
-}
-/* footer */
+</html>
