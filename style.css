@@ -504,7 +504,8 @@ nav .container {
     border-width: 0.01px;
     border-color: #000;
     border-radius: 4px;
-    margin: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
   }
 
   @media (min-width:600px) {
