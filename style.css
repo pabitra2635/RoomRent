@@ -497,17 +497,26 @@ nav .container {
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    border-width: 0.01px;
+    border-color: #000;
+    border-radius: 4px;
+    margin: 4px;
   }
-  
-.accordion:hover {
-    background-color: #ccc;
+
+  @media (min-width:600px) {
+    .accordion:hover {
+        background-color: #ccc;
+      }
   }
-  
+ @media (max-width:599px) {
+    .accordion:active {
+        background-color: #ccc;
+      }
+  }
   .accordion:after {
     content: '\002B';
     color: #777;
