@@ -49,9 +49,9 @@ TweenMax.from('.product-info',6,{
     opacity:0,
     ease:Expo.easeInOut
     })
-TweenMax.from('.product-card',7,{
+TweenMax.from('.product-card',4,{
     delay:0.5,
-    y:200,
+    y:30,
     opacity:0,
     ease:Expo.easeInOut
     })
@@ -60,6 +60,7 @@ TweenMax.from('.product-card',7,{
     const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 const colors = [
+  "#E2000F",
   "#ffb56b",
   "#fdaf69",
   "#f89d63",
@@ -206,4 +207,20 @@ class TypeWriter {
       const wait = txtElement.getAttribute('data-wait');
       // Init TypeWriter
       new TypeWriter(txtElement, words, wait);
+    }
+
+    // FAQ
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
     }
