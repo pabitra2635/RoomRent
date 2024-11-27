@@ -23,13 +23,13 @@ font-size: 16px;
 }
 #product{
     background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
-background-color: #E0FFFF;
+background-color: #bafafa;
 }
 #FAQ{
     background-color: #E0FFFF;
 }
 #slider{
-    background-color: #E0FFFF;
+    background-color: #bafafa;
 }
 /*
 Typographic tweaks!
@@ -245,23 +245,25 @@ font-size: 2.8rem;
 font-weight: 500;
 text-transform: capitalize;
 color: #E2000F;
-width: 70%;
+width: 40%;
+background-color: #40E0D0;
+border-radius: 10px;
+padding-bottom: 6px;
 }
 
 .product-btn {
-background-color: transparent;
-color: #E2000F;
+background-color: #F0FFF0;
+color: #020031;
 font-size: 1.5rem;
 display: flex;
-width: 20%;
-justify-content: center;
-align-items: center;
-min-height: 20px;
-transition: color 300ms;
+width: 40%;
+border-radius: 10px;
+border-width: 2px;
+border-color: #191970;
 }
 
 .product-btn:hover {
-color: #000;
+color: #000000;
 }
 
 #product .container {
